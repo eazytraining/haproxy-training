@@ -43,7 +43,8 @@ def get_student_ages():
 def who_is_calling():
     ip = request.remote_addr
     origin=request.headers.get('X-Forwarded-For', request.remote_addr)
-    return origin + " via "+ ip 
+    origin_2=request.headers.get('Forwarded', request.remote_addr)
+    return "Your client IP is: " + origin + " via "+ ip + ".<br>\nYour client IP fetched  via HTTP Forwarded Header is: " + origin_2 + ".\n"
 
 @app.route('/pozos/api/v1.0/get_student_ages/<student_name>', methods=['GET'])
 @auth.login_required
