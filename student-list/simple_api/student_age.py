@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask import abort
 from flask import make_response
 from flask import request
@@ -38,6 +38,13 @@ student_age = json.load(student_age_file)
 @auth.login_required
 def get_student_ages():
     return jsonify({'student_ages': student_age })
+
+@app.route('/pozos/api/v1.0/source_ip')
+def who_is_calling():
+    ip = request.remote_addr
+    origin=request.headers.get('X-Forwarded-For', request.remote_addr)
+    origin_2=request.headers.get('Forwarded', request.remote_addr)
+    return "Your client IP is: " + origin + " via "+ ip + ".<br>\nYour client IP fetched  via HTTP Forwarded Header is: " + origin_2 + ".\n"
 
 @app.route('/pozos/api/v1.0/get_student_ages/<student_name>', methods=['GET'])
 @auth.login_required
