@@ -2,8 +2,6 @@
 
 1. Dans votre configuration haproxy, activez la table d'affinité de session sur le backend **webappcolor**, puis vérifiez votre configuration HAProxy et recharger la configuration.
 
-**N.B**: *La table de session travaille au niveau **TCP** du modèle OSI, et non HTTP*.
-    
 
 1. Modifiez le backend webappcolor afin de toujours faire de la persistance, mais cette fois basée sur les cookies de session. Le cookie, nommé **WEBAPCOLOR** sera utilisé uniquement sur le serveur **blue**.
 
