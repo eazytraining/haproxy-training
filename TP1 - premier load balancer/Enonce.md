@@ -12,8 +12,8 @@
 4. Rajoutez l'application **blue** dans le backend **webappcolor** afin de mettre en place un équilibreur de charge entre les applications **red** et **blue** du backend **webappcolor**.
 
 5. Mettez en place un listen nommé **admin**  afin d'activer d'activer la page de statistiques comme suit : 
-   - L'accès sera authentifié, login: admin, password: password
-   - L'url d'accès sera /admin
-   - Le port d'accès sera le 10000
+   - L'accès sera authentifié, login: **admin**, password: **password**
+   - L'url d'accès sera **/admin**
+   - Le port d'accès sera le **10000**
    - Les utilisateurs connectés auront tous les droits
    
