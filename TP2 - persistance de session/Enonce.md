@@ -1,11 +1,4 @@
-## TP2 - Persistance de session sur un backend
-Les objectifs de ce TP sont les suivants : 
-- Rediriger le trafic sur le même serveur backend de deux manières 
-  - via la table de session (au niveau TCP)
-  - via les cookies du protocole http (niveau HTTP)
-- Ingnorer certaines pages du mécanisme de persistance, les pages statiques d'un site par exemple ...
-- Forcer le trafic sur un backend en erreur 
-
+## TP2 - Persistance de session
 
 1. Dans votre configuration haproxy, activez la table d'affinité de session sur le backend **webappcolor**, puis vérifiez votre configuration HAProxy et recharger la configuration.
     **N.B**
