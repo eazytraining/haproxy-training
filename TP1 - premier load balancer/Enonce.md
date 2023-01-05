@@ -6,7 +6,7 @@
    - Le port d'écoute est le **80**
    - Le frontend se nomme **webappcolor** et redirige le trafic le backend **webappcolor**.
 
-3. Une fois configuré, testez la validité de votre configuration et visualisez le résultat dans un navigateur à l'adresse http://myproxy.eazytraining.com
+3. Une fois configuré, testez la validité de votre configuration et visualisez le résultat dans un navigateur à l'adresse http://myproxy.eazytraining.fr
 
 
 4. Rajoutez l'application **blue** dans le backend **webappcolor** afin de mettre en place un équilibreur de charge entre les applications **red** et **blue** du backend **webappcolor**.
