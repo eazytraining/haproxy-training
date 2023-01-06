@@ -25,13 +25,13 @@
    - http://webappcolor.com/ → redirige vers red et blue
    - http://myproxy.eazytraining.fr/pozos/api/v1.0/get_student_ages → redirige vers studentlist
 
-7. Configurer le frontend **generic_frontend** afin que lorsqu'on saisit **http://color.com**, on soit redirigé sur **http://webappcolor.com/** avec le code retour **304**.
+7. Configurer le frontend **generic_frontend** afin que lorsqu'on saisit **http://color.com**, on soit redirigé sur **http://webappcolor.com/** avec le code retour **303**.
 
     **NB**
     - Attention aux ACLs mises en place à la **question 5**, il pourrait avoir collision, pensez à les commenter **éventuellement**.
     - les méthodes **req.hdr(Host)** et **hdr_dom(host)** sont identiques.
     - N'oubliez de configurer le dns color.com dans votre fichier host avant de faire les tests.
-    - Inspectez les pages web de votre navigateur pour voir les code retours et les paramètres de requête.
+    - Inspectez les pages web de votre navigateur pour voir les codes retours et les paramètres de requête.
 
 
 8. Configurer le frontend **generic_frontend** afin que lorsqu'on saisit **http://myproxy.eazytraining.fr/pozos**, on soit redirigé exactement sur **http://myproxy.eazytraining.fr/pozos/api/v1.0/get_student_ages** avec le codes retour **308**, sans conservation des paramètres de la requête.
