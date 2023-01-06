@@ -19,11 +19,11 @@
      - le backend par défaut est **website**
 
 6. Pour tester, taper ces urls dans votre navigateur : 
-- http://myproxy.eazytraining.fr → redirige vers site1 et site2
-- http://myproxy.eazytraining.fr/index.html → redirige vers site1 et site2
-- http://website.com/ → redirige vers site1 et site2
-- http://webappcolor.com/ → redirige vers red et blue
-- http://myproxy.eazytraining.fr/pozos/api/v1.0/get_student_ages → redirige vers studentlist
+   - http://myproxy.eazytraining.fr → redirige vers site1 et site2
+   - http://myproxy.eazytraining.fr/index.html → redirige vers site1 et site2
+   - http://website.com/ → redirige vers site1 et site2
+   - http://webappcolor.com/ → redirige vers red et blue
+   - http://myproxy.eazytraining.fr/pozos/api/v1.0/get_student_ages → redirige vers studentlist
 
 7. Configurer le frontend **generic_frontend** afin que lorsqu'on saisit **http://color.com**, on soit redirigé sur **http://webappcolor.com/** avec le code retour **304**.
 
