@@ -22,8 +22,7 @@ On peut remarquer l'option **forwardfor** qui envoit l'IP source.
 
 
 **TIPS**
-- Pour changer d'IP source, vous pouvez saisir http://127.0.0.1 dans votre navigateur, à condition d'avoir mis une règle de NAT sur le port 80 dans virtualbox.
-- Dans Google Chrome, vous pouvez installer l'extension [X-Forwarded-For Header](https://chrome.google.com/webstore/detail/x-forwarded-for-header/hkghghbnihliadkabmlcmcgmffllglin/related), elle pourrait aussi servir à forcer l'IP source.
+- Dans Google Chrome, vous pouvez installer l'extension [X-Forwarded-For Header](https://chrome.google.com/webstore/detail/x-forwarded-for-header/hkghghbnihliadkabmlcmcgmffllglin/related), elle servira à forcer l'IP source.
     
 
 3. Sur votre configuration HAProxy, rajouter l'envoie de l'en-tête **Forwarded** dans votre frontend **generic_frontend**. 
