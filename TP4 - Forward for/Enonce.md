@@ -30,4 +30,4 @@
 4. Vérifiez avec l'url suivante : http://myproxy.eazytraining.fr/pozos/api/v1.0/source_ip. 
 
     **TIPS**
-    - Regarder le [code application](https://github.com/eazytraining/haproxy-training/blob/main/student-list/simple_api/student_age.py#L42) afin de mieux comprendre ce qui se passe.
+    - Regarder le [code application](https://github.com/eazytraining/haproxy-training/blob/main/TP0/student-list/simple_api/student_age.py#L42) afin de mieux comprendre ce qui se passe.
