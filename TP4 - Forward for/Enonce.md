@@ -1,22 +1,6 @@
 ## TP4 - Forward-for
-1. Sur votre config haproxy, rassurez vous d'avoir la configuration suivante dans votre frontend generic_frontend: 
+1. Sur votre frontend generic_frontend, rassurez vous d'activer l'**option forwardfor**
 
-    ```
-    frontend  generic_frontend
-        ...
-        mode http
-        option forwardfor       except 127.0.0.0/8
-
-        # WEBSITE
-        acl website_acl hdr_dom(host) -i website.com
-        use_backend website if website_acl
-
-        # STUDENTLIST
-        acl studentlist_match path -i /pozos/api/v1.0/get_student_ages path -i /pozos/api/v1.0/source_ip
-        use_backend studentlist if studentlist_match
-        ...
-    ```
-    On peut remarquer l'option **forwardfor** qui envoit l'IP source.
 
 2. Tenter de joindre vos sites 1 et 2 (http://website.com/) et vérifiez les logs applicatifs. Vous devriez voir apparaîre l'ip source dans les logs.
 
