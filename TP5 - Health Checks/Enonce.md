@@ -1,6 +1,6 @@
 ## TP5 - Healtcheck et gestion des erreurs
 
-1. Sur votre backend webappcolor, configurer un check TCP sur le serveur **red**, à intervalle de 5s, avec une sortie du serveur à 2 échec et une remise du serveur dans le flux à 4 health checks en succès.
+1. Sur votre backend **webappcolor**, configurer un check TCP sur le serveur **red**, à intervalle de 5s, avec une sortie du serveur à 2 échec et une remise du serveur dans le flux à 4 health checks en succès.
 
 2. Stoppez l'application red et vérifiez que le serveur est enlevé du flux au bout de 10 sec maximum, et remmis dans le flux au bout de 20 sec minimum. Le test se fera sur l'url http://webappcolor.com. Voici les commandes permettand de stopper ou démarrer l'appli red :
     ```
