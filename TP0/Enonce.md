@@ -23,7 +23,7 @@ Les objectifs de ce TP sont les suivants :
    vagrant ssh squid
    ```
   
-2. Créer une entrée DNS **myproxy.eazytraining.com** dans les fichiers hosts de votre machine physique et de vos VMs. Cette entrée pointera vers l'adresse IP de la VM haproxy.
+2. Créer une entrée DNS **myproxy.eazytraining.fr** dans les fichiers hosts de votre machine physique et de vos VMs. Cette entrée pointera vers l'adresse IP de la VM haproxy.
   
 #### Récapitulatif
 
