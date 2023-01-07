@@ -1,0 +1,10 @@
+# Vagrant file
+.vagrant
+# fichiers temporaires de la gamme office
+~*
+# répertoire partargé avec les VMs
+shared
+# ssh keypairs
+*.pem
+# vscode files
+*.vscode
