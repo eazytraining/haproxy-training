@@ -18,6 +18,6 @@
     docker stop api
     ```            
    
-6. Modifiez le backend **ihm_studentlist** en ajoutant les applications red et blue. red et blue seront tous deux backups. La configuration serait ceci : 
+6. Modifiez le backend **ihm_studentlist** en ajoutant les applications red et blue. red et blue seront tous deux backups. 
 
 7. Testez l'url http://mystudentlist.com, elle devrait vous donner l'ihm de studentlist. Stoppez l'ihm et refaites le test, on devrait voir une bascule entre les application red et blue.
