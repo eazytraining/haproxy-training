@@ -5,12 +5,9 @@
    -   Création du certificat et de la clé.
        Renseigner **website.com** au  **Common Name (CN)**
        ```
-       $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout website_key.pem -out website_cert.pem
-       $ cat website_key.pem website_key.pem >> website_cert.pem
+       $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout website_key.pem -out website_crt.pem
+       $ cat website_key.pem website_crt.pem >> website_cert.pem
        $ sudo mv *.pem /etc/ssl/certs
-       $ cd /var/lib/haproxy   # Si HAPproxy est chrooté dans /var/lib/haproxy
-       $ sudo mkdir certs
-       $ sudo mount --bind certs /etc/ssl/certs
        ```
 
 2. Vos applications **site1** et **site2** tournent à base du serveur web **nginx** dans un conteneur. Mettez en place un certificat autosigné sur **site1** uniquement.
