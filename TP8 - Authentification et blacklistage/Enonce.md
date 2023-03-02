@@ -4,7 +4,6 @@
     ```
     $ docker run -itd --name test ubuntu:18.04 
     $ docker exec -it test apt update -y
-    $ apt install whois 
     $ docker exec -it test apt install whois 
     $ docker exec -it test mkpasswd -m sha-256 mypassword123 
     $ docker exec -it test mkpasswd -m sha-256 anotherpassword  
