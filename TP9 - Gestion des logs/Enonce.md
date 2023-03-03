@@ -10,7 +10,7 @@
     ```
 4. Vérifier que les journaux sont bien présents dans les fichiers adéquats.
 
-5. Créer des pages d'erreurs personnalisées pour les codes retour **503** et **403**  dans **/etc/haproxy/errorfiles**. Une fois fait, configurer Haproxy afin qu'il utilise ces pages d'erreur.
+5. Créer des pages d'erreurs personnalisées pour les codes retour **503** et **403**  dans **/etc/haproxy/errorfiles**.<br> Une fois fait, configurer Haproxy afin qu'il utilise ces pages d'erreur.
 
 
    
