@@ -5,4 +5,8 @@
     ```
 2. Une fois installé, éditer la configuration afin d'écouter sur le port ```3128```, et activer la gestion de la cache.
 
-3. vérifier que la configuration ne comporte aucune erreur, ensuite démarrer le service et vérifier qu'il est bien fonctionnel
+3. Vérifier que la configuration ne comporte aucune erreur, ensuite démarrer le service et vérifier qu'il est bien fonctionnel
+    ```bash
+    systemctl start squid
+    squidclient  http://192.168.99.10  | grep -iE "favo|dime"
+    ```
