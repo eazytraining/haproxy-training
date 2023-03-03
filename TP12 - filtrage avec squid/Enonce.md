@@ -4,7 +4,7 @@
     acl website dstdomain .website.com
     http_access deny website
     ```   
-2. Mettez en place des acls (website et blacklist) squid qui interdit le trafic vers http://website.com/ en provenance du réseau d'adresse IP 172.28.128.0/24
+2. Mettez en place des acls (website et blacklist) squid qui interdisent le trafic vers http://website.com/ en provenance du réseau d'adresse IP 172.28.128.0/24
     ```
     acl blacklist src 172.28.128.0/24
     acl website dstdomain .website.com
