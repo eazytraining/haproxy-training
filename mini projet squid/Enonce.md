@@ -4,8 +4,8 @@
 Soit le schéma d'architecture réseau suivant:<br>
 ![Archi mini projet](img/architecture_mini_projet.jpg).
 <br>
-Trois sous-réseaux sont définis pour les stations clientes. Les serveurs sont dans leur propre sous-réseau ayant pour adresse 172.16.0.0 et le proxy possède l’adresse 172.16.1.12. Le routage entre ces sous-réseaux se fait par un commutateur de niveau 3.<br>
-On désire que le sous-réseau administratif puisse avoir accès au serveur proxy aux heures de bureau (plage horaire allant de 7h30 à 19h30). Les clients du pôle chimie ont accès au serveur proxy du lundi au samedi alors que les utilisateurs du service informatique doivent avoir accès en permanence au serveur proxy pour naviguer sur Internet.
+Trois sous-réseaux sont définis pour les stations clientes.<br>Les serveurs sont dans leur propre sous-réseau ayant pour adresse **172.16.0.0** et le proxy possède l’adresse **172.16.1.12**. Le routage entre ces sous-réseaux se fait par un commutateur de niveau 3.<br>
+On désire que le sous-réseau administratif puisse avoir accès au serveur proxy aux heures de bureau (plage horaire allant de **7h30** à **19h30**). Les clients du pôle chimie ont accès au serveur proxy du **lundi au samedi** alors que les utilisateurs du service informatique doivent avoir accès en permanence au serveur proxy pour naviguer sur Internet.
 
 ### Partie I: accès au proxy
 1. Donner les acl permettant de déclarer les sous-réseaux des trois services présents sur le réseau local.
